@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --back: hsl(255, 10%, 16%);
+  --title: hsl(255, 24%, 94%);
+}
+
+body {
+  background-color: var(--back);
+  color: var(--title);
+  font-family: "Poppins", sans-serif;
+}
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+footer {
+  text-align: center;
+  transform: translateY(-80px);
+}
+main {
+  display: flex;
+  column-gap: 120px;
+}
+.slider-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 400px;
+  position: relative;
+  height: 250px;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+  display: none;
+}
+.carousel-item,
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.carousel-item-visible {
+  display: block;
+}
+
+.container-btn {
+  position: relative;
+}
+.container-btn i {
+  font-size: 23px;
+  margin: 6px 7px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.container-btn i:hover {
+  transform: translateY(-3px);
+}
+.container-btn i:active {
+  transform: translateY(0px);
+}
+.map {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: -18px;
+}
+.map li {
+  transition: all 0.3s ease;
+  list-style-type: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 1px solid whitesmoke;
+}
+.full {
+  background-color: whitesmoke;
+  transform: translateY(-1px);
+}
+
+/*------------------- Calculator-----------------*/
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator {
+  width: max-content;
+}
+.screen {
+  padding-right: 10px;
+  text-align: end;
+  width: 100%;
+  height: 55px;
+  background-color: rgba(245, 245, 245, 0.863);
+  margin-bottom: 1.3rem;
+  color: black;
+}
+.previous-ope {
+  color: rgba(0, 0, 0, 0.5);
+}
+.current-ope {
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+.board {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+}
+.board h1 {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(80, 30, 30, 1);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.board h1:hover {
+  transform: translateY(-1px);
+  background-color: rgb(155, 32, 32);
+}
+.board h1:active {
+  transform: translateY(0);
+  box-shadow: 0 0 8px 3px rgb(173 31 31);
+}

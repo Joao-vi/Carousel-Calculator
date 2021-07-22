@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b080262dcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mini Projects</title>
+  </head>
+  <body>
+    <div class="center">
+      <main>
+        <div class="slider-container">
+          <h1 class="title">Slider</h1>
+          <div class="carousel">
+            <div class="carousel-item carousel-item-visible">
+              <img src="assets/blog.jpg" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/wp3162429.jpg" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/wallpapersden.com_castle-4k-illustration_3840x2160.jpg"
+              />
+            </div>
+          </div>
+          <div class="container-btn">
+            <div class="map">
+              <li class="full"></li>
+              <li></li>
+              <li></li>
+            </div>
+            <i id="prev" class="fas fa-angle-left"></i>
+            <i id="next" class="fas fa-angle-right"></i>
+          </div>
+        </div>
+
+        <div class="calculator-container">
+          <h1>Calculator</h1>
+          <div class="calculator">
+            <div class="screen">
+              <div data-prev class="previous-ope">0</div>
+              <div data-current class="current-ope">0</div>
+            </div>
+            <div class="board">
+              <h1 data-clear-all>C</h1>
+              <h1 data-clear><</h1>
+              <h1 data-operation>/</h1>
+              <h1 data-operation>x</h1>
+              <h1 data-number>7</h1>
+              <h1 data-number>8</h1>
+              <h1 data-number>9</h1>
+              <h1 data-operation>-</h1>
+              <h1 data-number>4</h1>
+              <h1 data-number>5</h1>
+              <h1 data-number>6</h1>
+              <h1 data-operation>+</h1>
+              <h1 data-number>1</h1>
+              <h1 data-number>2</h1>
+              <h1 data-number>3</h1>
+              <h1 data-equal style="z-index: 1; padding: 55px 0px">=</h1>
+              <h1 data-number style="z-index: 1; padding: 0px 55px">0</h1>
+              <h1></h1>
+              <h1 data-number>.</h1>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer><h1>Made by João Victor</h1></footer>
+    <script src="slider.js"></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>
